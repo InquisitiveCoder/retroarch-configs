@@ -1,0 +1,31 @@
+# Combining higher CD speeds with CPU overclocking causes FMVs to play
+# too fast. However, instant CD seeks with CPU overclocking provides a
+# similar reduction in battle loading times.
+swanstation_CDROM_ReadSpeedup = "1"
+
+# 300% CPU speed improves loading times and allows battles to run at
+# 60 FPS, which in turn makes the menu more responsive.
+swanstation_CPU_Overclock = "300"
+
+# Bilinear filtering slightly improves textures and reduces distracting
+# aliasing during battles caused by the camera's constant rotation and
+# the ground being rendered at such a slanted angle.
+swanstation_GPU_TextureFilter = "Bilinear"
+
+# Chrono Cross applies dithering to the entire screen during battle.
+# 24-bit color rendering will remove it while preventing color banding.
+swanstation_GPU_TrueColor = "true"
+
+# 300% CPU brings the battle cursor's input lag down to 1 frame.
+swanstation_Main_RunaheadFrameCount = "1"
+
+# Game-specific core option files are stand-alone configurations, so
+# all changes made to the main option file also need to be copied here.
+swanstation_CDROM_ReadSpeedup = "2"
+swanstation_CDROM_SeekSpeedup = "0"
+swanstation_GPU_ChromaSmoothing24Bit = "true"
+swanstation_GPU_PGXPEnable = "true"
+swanstation_GPU_PGXPTextureCorrection = "true"
+swanstation_GPU_ResolutionScale = "2"
+swanstation_GPU_ScaledDithering = "false"
+swanstation_Hacks_OldMDECRoutines = "false"

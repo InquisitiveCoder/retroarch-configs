@@ -1,0 +1,22 @@
+swanstation_Main_RunaheadFrameCount = "4"
+
+# Smooth out color banding in the orange respawn glow.
+# Fine dithering smooths out the color transitions better than
+# 24-bit color rendering.
+swanstation_GPU_ScaledDithering = "true"
+
+# NOTE: Bilinear filtering would look better, but some environment
+# textures are slightly misaligned and bilinear filtering makes the
+# seams far more obvious.
+# swanstation_GPU_TextureFilter = "Bilinear"
+
+# Game-specific core option files are stand-alone configurations, so
+# all changes made to the main option file also need to be copied here.
+swanstation_CDROM_ReadSpeedup = "2"
+swanstation_CDROM_SeekSpeedup = "0"
+swanstation_GPU_ChromaSmoothing24Bit = "true"
+swanstation_GPU_PGXPEnable = "true"
+swanstation_GPU_PGXPTextureCorrection = "true"
+swanstation_GPU_ResolutionScale = "2"
+swanstation_Hacks_OldMDECRoutines = "false"
+

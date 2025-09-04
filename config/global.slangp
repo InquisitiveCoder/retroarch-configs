@@ -1,0 +1,4 @@
+#reference "../shaders/shaders_slang/crt/crt-consumer.slangp"
+warpx = "0.000000"
+warpy = "0.000000"
+inter = "0.000000"

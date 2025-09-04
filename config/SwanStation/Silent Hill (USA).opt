@@ -1,0 +1,16 @@
+# 24-bit color smooths out the fog.
+swanstation_GPU_TrueColor = "true"
+
+# The game has 4-5 frames of input lag during gameplay, but any amount
+# of runahead cuts off inventory menu sounds.
+swanstation_Main_RunaheadFrameCount = "0"
+
+# Game-specific core option files are stand-alone configurations, so
+# all changes made to the main option file also need to be copied here.
+swanstation_CDROM_ReadSpeedup = "2"
+swanstation_CDROM_SeekSpeedup = "0"
+swanstation_GPU_ChromaSmoothing24Bit = "true"
+swanstation_GPU_ResolutionScale = "2"
+swanstation_GPU_PGXPEnable = "true"
+swanstation_GPU_PGXPTextureCorrection = "true"
+swanstation_Hacks_OldMDECRoutines = "false"

@@ -1,0 +1,22 @@
+# This game has many instances of blocky textures that look more
+# natural when smoothed, and little to no pixel art that gets
+# ruined in the process.
+swanstation_GPU_TextureFilter = "Bilinear"
+
+# 24-bit color fixes color banding on Jill's skin.
+swanstation_GPU_TrueColor = "true"
+
+# RE3 has 4-5 frames of input lag during gameplay, but only 2 in the
+# inventory menu, and more than 1 frame of runahead cuts off menu
+# sound effects.
+swanstation_Main_RunaheadFrameCount = "1"
+
+# Game-specific core option files are stand-alone configurations, so
+# all changes made to the main option file also need to be copied here.
+swanstation_CDROM_ReadSpeedup = "2"
+swanstation_CDROM_SeekSpeedup = "0"
+swanstation_GPU_ChromaSmoothing24Bit = "true"
+swanstation_GPU_ResolutionScale = "2"
+swanstation_GPU_PGXPEnable = "true"
+swanstation_GPU_PGXPTextureCorrection = "true"
+swanstation_Hacks_OldMDECRoutines = "false"

@@ -1,0 +1,22 @@
+# For more information on aspect ratio, see
+# https://www.nesdev.org/wiki/Overscan
+fceumm_aspect = "8:7 PAR"
+
+# Hides graphical glitches related to horizontal scrolling.
+# If a game exhibits such glitches, 4px of cropping usually isn't
+# enough to hide it, while 12px will often cut into HUD elements.
+fceumm_overscan_h_left = "8"
+fceumm_overscan_h_right = "8"
+
+# Crops a conservative 10% of the vertical overscan area to zoom in
+# more of the active play area. This value also results in perfect x5
+# scaling if the resolution is 1080p.
+fceumm_overscan_v_bottom = "12"
+fceumm_overscan_v_top = "12"
+
+# This is the most accurate color palette.
+fceumm_palette = "magnum-fbx"
+
+# The core defaults to Low quality just in case it's running on
+# extremely slow hardware.
+fceumm_sndquality = "Very High"

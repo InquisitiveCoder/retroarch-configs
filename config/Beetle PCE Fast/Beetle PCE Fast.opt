@@ -1,0 +1,3 @@
+pce_fast_initial_scanline = "8"
+pce_fast_last_scanline = "226"
+pce_fast_palette = "Composite"

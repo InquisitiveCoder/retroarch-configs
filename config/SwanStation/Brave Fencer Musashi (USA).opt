@@ -1,0 +1,24 @@
+# 24-bit color fixes color banding in various characters and
+# transparency effects.
+swanstation_GPU_TrueColor = "true"
+
+# Brave Fencer Musashi has 4-5 frames of lag across the board.
+swanstation_Main_RunaheadFrameCount = "4"
+
+# NOTE: In my opinion, Brave Fencer Musashi looks better overall with
+# nearest-neighbor scaling, but if you prefer bilinear filtering, keep
+# in mind that it causes seams to appear in some textures, like the rug
+# in Musashi's room.
+# swanstation_GPU_TextureFilter = "Bilinear"
+
+# Game-specific core option files are stand-alone configurations, so
+# all changes made to the main option file also need to be copied here.
+swanstation_CDROM_ReadSpeedup = "2"
+swanstation_CDROM_SeekSpeedup = "0"
+swanstation_GPU_ChromaSmoothing24Bit = "true"
+swanstation_GPU_PGXPEnable = "true"
+swanstation_GPU_PGXPTextureCorrection = "true"
+swanstation_GPU_ResolutionScale = "2"
+swanstation_GPU_ScaledDithering = "false"
+swanstation_Hacks_OldMDECRoutines = "false"
+

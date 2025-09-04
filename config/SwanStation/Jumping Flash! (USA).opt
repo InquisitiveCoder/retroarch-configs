@@ -1,0 +1,16 @@
+# Jumping Flash! can go up to 60 FPS with enough overclocking.
+swanstation_CPU_Overclock = "610"
+
+# Jumping Flash! will have 4-5 frames of input lag regardless of FPS.
+swanstation_Main_RunaheadFrameCount = "4"
+
+# Game-specific core option files are stand-alone configurations, so
+# all changes made to the main option file also need to be copied here.
+swanstation_CDROM_ReadSpeedup = "2"
+swanstation_CDROM_SeekSpeedup = "0"
+swanstation_GPU_ChromaSmoothing24Bit = "true"
+swanstation_GPU_PGXPEnable = "true"
+swanstation_GPU_PGXPTextureCorrection = "true"
+swanstation_GPU_ResolutionScale = "2"
+swanstation_GPU_ScaledDithering = "false"
+swanstation_Hacks_OldMDECRoutines = "false"

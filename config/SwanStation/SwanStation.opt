@@ -1,0 +1,37 @@
+# x2 CD speed improves loading times and usually doesn't cause issues.
+# Higher speed multipliers have diminishing retuns and are more likely
+# to cause games to freeze.
+swanstation_CDROM_ReadSpeedup = "2"
+
+# Instant seeks also improve loading times and rarely cause issues.
+swanstation_CDROM_SeekSpeedup = "0"
+
+# Very slightly smooths out colors in FMVs.
+swanstation_GPU_ChromaSmoothing24Bit = "true"
+
+# Remove polygon wobbling and use perspective-correct texture mapping.
+# See https://retrocomputing.stackexchange.com/a/5021
+swanstation_GPU_PGXPEnable = "true"
+swanstation_GPU_PGXPTextureCorrection = "true"
+
+# Double the internal resolution (i.e. 480p instead of 240p.)
+# 240p has too few pixels to make out distant objects clearly. On the
+# other hand, HD resolutions makes polygon edges too smooth relative
+# texture pixels and pre-rendered backgrounds.
+swanstation_GPU_ResolutionScale = "2"
+
+# When dithering is used to add visual noise to flat shading (e.g.
+# Final Fantasy VII), it's better not to scale it. In cases where it's
+# merely used to hide color banding, a finer dithering pattern would be
+# less obtrusive, but turning on 24-bit color rendering usually yields
+# even better results.
+swanstation_GPU_ScaledDithering = "false"
+
+# The old MDEC routines are only necessary for compatibility with
+# texture packs that predate 2023. The new routines are more accurate.
+swanstation_Hacks_OldMDECRoutines = "false"
+
+# Most PlayStation games have at least 2 frames of lag.
+# This core isn't compatible with RetroArch's runahead feature, but has
+# its own runahead implementation.
+swanstation_Main_RunaheadFrameCount = "2"
