@@ -1,0 +1,3 @@
+# The default setting is faster but less accurate. Sonic Adventure has
+# glaring polygon clipping issues without per-pixel alpha sorting.
+reicast_alpha_sorting = "per-pixel (accurate)"
