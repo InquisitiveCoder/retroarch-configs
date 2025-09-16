@@ -1,2 +1,8 @@
+# GBA audio sounds quite harsh when it's not being heard through
+# tiny speakers. This setting smooths out the sound.
 mgba_audio_low_pass_filter = "enabled"
-mgba_gb_colors_preset = "0"
+
+# Game Boy Color/Advance games usually used overly-saturated colors
+# interally because they'd look less saturated on their LCD screens.
+# This setting approxiates the colors seen on real hardware.
+mgba_color_correction = "Auto"
