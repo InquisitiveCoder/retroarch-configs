@@ -3,6 +3,12 @@
 fceumm_overscan_h_left = "12"
 fceumm_overscan_h_right = "4"
 
+# Reduce sprite flickering.
+fceumm_nospritelimit = "enabled"
+
+# Reduce slowdowns.
+fceumm_overclocking = "2x-Postrender"
+
 # Game-specific core option files are stand-alone configurations, so
 # all changes made to the main option file also need to be copied here.
 fceumm_aspect = "8:7 PAR"
