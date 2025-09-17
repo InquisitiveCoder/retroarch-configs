@@ -2,6 +2,16 @@
 # https://www.nesdev.org/wiki/Overscan
 fceumm_aspect = "8:7 PAR"
 
+# Removes the 8 sprite per scanline limit, greatly reduces flickering
+# in games when many sprites are on screen. A handful of games rely on
+# the sprite limit, but they're scarce enough that it's simpler to add
+# overrides for the exceptions.
+# See https://www.nesdev.org/wiki/Sprite_overflow_games
+fceumm_nospritelimit = "enabled"
+
+# Removes slowdowns.
+fceumm_overclocking = "2x-Postrender"
+
 # Hides graphical glitches related to horizontal scrolling.
 # If a game exhibits such glitches, 4px of cropping usually isn't
 # enough to hide it, while 12px will often cut into HUD elements.

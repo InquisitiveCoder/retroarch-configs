@@ -5,6 +5,8 @@ fceumm_overscan_h_right = "4"
 # Game-specific core option files are stand-alone configurations, so
 # all changes made to the main option file also need to be copied here.
 fceumm_aspect = "8:7 PAR"
+fceumm_nospritelimit = "enabled"
+fceumm_overclocking = "2x-Postrender"
 fceumm_overscan_v_bottom = "12"
 fceumm_overscan_v_top = "12"
 fceumm_palette = "magnum-fbx"

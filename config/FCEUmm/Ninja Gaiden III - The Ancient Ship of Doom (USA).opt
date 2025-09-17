@@ -1,14 +1,13 @@
-# This game has extra wide horizontal margins.
-# 16 pixels of overscan aligns the edge of the play area with the edge
-# of the screen and removes excessive space from the sides of the HUD.
-fceumm_overscan_h_left = "16"
-fceumm_overscan_h_right = "16"
+# This game relies on the scanline sprite limit.
+# See https://www.nesdev.org/wiki/Sprite_overflow_games
+fceumm_nospritelimit = "disabled"
 
 # Game-specific core option files are stand-alone configurations, so
 # all changes made to the main option file also need to be copied here.
 fceumm_aspect = "8:7 PAR"
-fceumm_nospritelimit = "enabled"
 fceumm_overclocking = "2x-Postrender"
+fceumm_overscan_h_left = "8"
+fceumm_overscan_h_right = "8"
 fceumm_overscan_v_bottom = "12"
 fceumm_overscan_v_top = "12"
 fceumm_palette = "magnum-fbx"
