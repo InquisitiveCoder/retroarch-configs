@@ -18,11 +18,17 @@ fceumm_overclocking = "2x-Postrender"
 fceumm_overscan_h_left = "8"
 fceumm_overscan_h_right = "8"
 
-# Crops a conservative 10% of the vertical overscan area to zoom in
-# more of the active play area. This value also results in perfect x5
-# scaling if the resolution is 1080p.
-fceumm_overscan_v_bottom = "12"
-fceumm_overscan_v_top = "12"
+# Most games avoid placing HUD elements at the top and bottom edges of
+# the screen, and games that need to scroll in two directions (e.g.
+# Final Fantasy) may contain graphical glitches there.
+#
+# Cropping 8 pixels from both edges is enough to mask these glitches.
+# The resulting 224p content size also plays nicely with the current
+# implementation of Smart integer scaling for 720p (Nintendo Switch),
+# 800p (Steam Deck), 1080p and 4k resolutions. If you're using a 1440p
+# monitor, you'll want to change Integer Scale Scaling to Underscale.
+fceumm_overscan_v_bottom = "8"
+fceumm_overscan_v_top = "8"
 
 # This is the most accurate color palette.
 fceumm_palette = "magnum-fbx"

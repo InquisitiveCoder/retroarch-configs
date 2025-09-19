@@ -1,1 +1,15 @@
-snes9x_overscan = "12_pixels"
+# This is required for the pseudo-transparency effect used by games
+# like Kirby's Dream Land 3. Both "merge" and "blur" result in adequate
+# transparency, but merge results in illegible text in Secret of Mana.
+# Not sure why the core defaults to no blending.
+snes9x_hires_blend = "blur"
+
+# Crops 8 pixels from each side of the edge of the screen. This space
+# is usually unused and would've been hidden on a consumer CRT.
+# 8 pixels is already the core default but it's worth enforcing since
+# it interacts with the Smart integer scaling set in the global config.
+# The resulting 224p content size also plays nicely with the current
+# implementation of Smart integer scaling for 720p (Nintendo Switch),
+# 800p (Steam Deck), 1080p and 4k resolutions. If you're using a 1440p
+# monitor, you'll want to change Integer Scale Scaling to Underscale.
+snes9x_overscan = "8_pixels"

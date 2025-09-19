@@ -1,0 +1,10 @@
+# Simulates the sound of a Model 1 Mega Drive/Genesis.
+genesis_plus_gx_audio_filter = "low-pass"
+
+# Genesis games usually have a border around them.
+# This setting crops 8 pixels from every side of the screen.
+# The resulting 224p content size also plays nicely with the current
+# implementation of Smart integer scaling for 720p (Nintendo Switch),
+# 800p (Steam Deck), 1080p and 4k resolutions. If you're using a 1440p
+# monitor, you'll want to change Integer Scale Scaling to Underscale.
+genesis_plus_gx_overscan = "disabled"

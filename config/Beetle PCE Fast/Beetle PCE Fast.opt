@@ -1,3 +1,14 @@
-pce_fast_initial_scanline = "8"
-pce_fast_last_scanline = "226"
+# These settings crop some of the overscan area and hide the blue
+# borders in the menu screen of Castlevania.
+#
+# The resulting 224p content size also plays nicely with the current
+# implementation of Smart integer scaling for 720p (Nintendo Switch),
+# 800p (Steam Deck), 1080p and 4k resolutions. If you're using a 1440p
+# monitor, you'll want to change Integer Scale Scaling to Underscale.
+pce_fast_initial_scanline = "5"
+pce_fast_last_scanline = "228"
+
+# The RGB values used internally by the PC Engine aren't meant to be
+# displayed directly. The composite color palette is accurate.
+# See https://www.retrorgb.com/pc-engine-palette-improvements-the-amazing-people-behind-the-technology.html
 pce_fast_palette = "Composite"
