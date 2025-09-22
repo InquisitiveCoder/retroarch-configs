@@ -3,12 +3,6 @@
 fceumm_overscan_h_left = "0"
 fceumm_overscan_h_right = "0"
 
-# Game-specific core option files are stand-alone configurations, so
-# all changes made to the main option file also need to be copied here.
-fceumm_aspect = "8:7 PAR"
-fceumm_nospritelimit = "enabled"
-fceumm_overclocking = "2x-Postrender"
-fceumm_overscan_v_bottom = "8"
-fceumm_overscan_v_bottom = "8"
-fceumm_palette = "magnum-fbx"
-fceumm_sndquality = "Very High"
+# Options are always stand-alone files, so game and content directory
+# overrides should include the core options file.
+#include "FCEUmm.opt"

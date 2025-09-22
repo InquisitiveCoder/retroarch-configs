@@ -11,14 +11,6 @@ swanstation_Main_RunaheadFrameCount = "4"
 # in Musashi's room.
 # swanstation_GPU_TextureFilter = "Bilinear"
 
-# Game-specific core option files are stand-alone configurations, so
-# all changes made to the main option file also need to be copied here.
-swanstation_CDROM_ReadSpeedup = "2"
-swanstation_CDROM_SeekSpeedup = "0"
-swanstation_GPU_ChromaSmoothing24Bit = "true"
-swanstation_GPU_PGXPEnable = "true"
-swanstation_GPU_PGXPTextureCorrection = "true"
-swanstation_GPU_ResolutionScale = "2"
-swanstation_GPU_ScaledDithering = "false"
-swanstation_Hacks_OldMDECRoutines = "false"
-
+# Options are always stand-alone files, so game and content directory
+# overrides should include the core options file.
+#include "SwanStation.opt"

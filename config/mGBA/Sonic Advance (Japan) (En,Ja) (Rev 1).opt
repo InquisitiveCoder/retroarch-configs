@@ -1,5 +1,6 @@
-genesis_plus_gx_overclock = "500"
+# Sonic Advance doesn't compensate for the GBA screen's desaturation.
+mgba_color_correction = "OFF"
 
 # Options are always stand-alone files, so game and content directory
 # overrides should include the core options file.
-#include "Genesis Plus GX.opt"
+#include "mGBA.opt"
