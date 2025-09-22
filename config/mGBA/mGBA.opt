@@ -4,5 +4,11 @@ mgba_audio_low_pass_filter = "enabled"
 
 # Game Boy Color/Advance games usually used overly-saturated colors
 # interally because they'd look less saturated on their LCD screens.
-# This setting approxiates the colors seen on real hardware.
+# This setting mimics the desaturated look of those screens.
 mgba_color_correction = "Auto"
+
+# 0: ignore the game's custom palettes
+# 1: use the game's Game Boy Color palette (if any)
+# 2: use the game's Super Game Boy palette (if any)
+# 3: use any available color palette provided by the game
+mgba_gb_colors_preset = "3"

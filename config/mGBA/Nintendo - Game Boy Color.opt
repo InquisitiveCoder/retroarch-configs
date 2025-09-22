@@ -1,0 +1,7 @@
+# Turn off color correction since the LCD shader already handles it.
+mgba_color_correction = "OFF"
+
+# Core option overrides are stand-alone configurations, so all changes
+# made to the main option file also need to be copied here.
+mgba_audio_low_pass_filter = "enabled"
+mgba_gb_colors_preset = "3"
