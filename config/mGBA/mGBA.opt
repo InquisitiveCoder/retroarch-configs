@@ -12,3 +12,9 @@ mgba_color_correction = "Auto"
 # 2: use the game's Super Game Boy palette (if any)
 # 3: use any available color palette provided by the game
 mgba_gb_colors_preset = "3"
+
+# Turn off Super Game Boy borders since they clash with the LCD shader.
+# Users can opt into SGB borders for specific games by loading the ROM
+# from a folder called "SGB Enhanced", which will prevent the LCD shader
+# from applying and will also ensure that 240p smart scaling is applied.
+mgba_sgb_borders = "OFF"
