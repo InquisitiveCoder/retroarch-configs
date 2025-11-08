@@ -13,17 +13,20 @@ out-of-the-box experience, such as:
 Copy the contents of the `config` folder into your RetroArch installation's
 `config` folder. This will copy the emulator and game-specific settings.
 
-The `better-defaults` folder contains the settings for RetroArch.
-Copy its contents to the same location as `retroarch.cfg`:
+Temporarily copy the contents of the `better-defaults` folder to the folder
+that contains `retroarch.cfg`:
   * On Windows, it's the RetroArch installation folder (`C:\RetroArch-Win64` by default.)
   * On Linux, it's `~/.config/retroarch`.
-  * On MacOS, it's `~/Library/Application Support/RetroArch/config`.
+  * On macOS, it's `~/Library/Application Support/RetroArch/config`.
   * On Android, it's `/storage/emulated/0/Android/data/com.retroarch/files`.
 
-Open `better-defaults/main.cfg` in a text editor, read the comments (it won't take long!),
-and make changes if necessary.
+Then, open a terminal and run RetroArch using the `--apendconfig` option to
+apply the relevant files:
+```bash
+retroarch --appendconfig="latency.cfg|ux.cfg|paths.cfg"
+```
+If you have an existing RetroArch installation with save files and save states,
+you should remove `paths.cfg` from the list unless you intend to manually move
+your saves and screenshots to the new paths.
 
-Finally, add this line to the **top** of `retroarch.cfg`:
-```
-#include "better-defaults/main.cfg"
-```
+Once RetroArch starts, you can delete `latency.cfg`, etc.
